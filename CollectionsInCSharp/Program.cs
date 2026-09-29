@@ -46,13 +46,39 @@ namespace CollectionsInCSharp
             myArrayList.Add(30);
             myArrayList.Add(40);
 
-            myArrayList.Add("hello");
+            //myArrayList.Add("hello");
 
             sum = 0;
 
             for (int i=0; i<myArrayList.Count; i++)
             {
                 int num = (int)myArrayList[i];
+                sum += num;
+            }
+
+            Console.WriteLine("\nSum = " + sum);
+
+
+
+            // List example
+
+            // GOOD - dynamic in size
+            // GOOD - no performance issue - no boxing / unboxing
+            // GOOD - type-safe
+
+            List<int> myList = new List<int>();
+            myList.Add(10);
+            myList.Add(20);
+            myList.Add(30); 
+            myList.Add(40);
+
+            //myList.Add("hello");
+
+            sum = 0;
+
+            for (int i=0; i<myList.Count; i++)
+            {
+                int num = myList[i];
                 sum += num;
             }
 
