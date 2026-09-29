@@ -66,11 +66,15 @@ namespace CollectionsInCSharp
             // GOOD - no performance issue - no boxing / unboxing
             // GOOD - type-safe
 
-            List<int> myList = new List<int>();
+            // RECOMMENDED TO USE
+
+            List<int> myList = new List<int>(50);
+            Console.WriteLine(myList.Capacity);
             myList.Add(10);
             myList.Add(20);
             myList.Add(30); 
             myList.Add(40);
+            myList.Add(50);
 
             //myList.Add("hello");
 
