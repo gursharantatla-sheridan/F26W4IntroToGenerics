@@ -3,4 +3,5 @@
   <Project Path="DictionaryExample/DictionaryExample.csproj" />
   <Project Path="F26W4IntroToGenerics/F26W4IntroToGenerics.csproj" />
   <Project Path="ListExample/ListExample.csproj" />
+  <Project Path="StackExample/StackExample.csproj" Id="f147858a-b0db-495b-b055-2a298a4ee4da" />
 </Solution>
